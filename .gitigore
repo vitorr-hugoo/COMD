@@ -1,0 +1,93 @@
+# =================================================================
+# GITIGNORE PADRÃO PARA ENGENHARIA E DESENVOLVIMENTO
+# =================================================================
+
+# === Arquivos de Sistema (Windows, macOS, Linux) ===
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+*.lnk
+ehthumbs.db
+Icon?
+
+# === Documentos e Office (Temporários e Arquivos Finais) ===
+# Ignora arquivos temporários (que começam com ~$) e documentos
+~$*.doc*
+~$*.xls*
+~$*.ppt*
+*.tmp
+*.docx
+*.doc
+*.xlsx
+*.xls
+*.pptx
+*.ppt
+
+
+# === Arquivos Comprimidos ===
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+*.iso
+
+# === Logs e Arquivos Temporários ===
+*.log
+*.bak
+*.swp
+*.old
+*.temp
+*.tmp
+*.cache
+
+# === Binários e Executáveis ===
+*.exe
+*.dll
+*.so
+*.bin
+*.msi
+*.out
+*.app
+
+# =================================================================
+# SOFTWARES DE SIMULAÇÃO E EDA (Circuitos e PCB)
+# =================================================================
+
+# --- LTSpice ---
+*.raw
+*.op.raw
+*.fft
+*.net
+*.log
+*.bak
+*.measure
+
+# --- KiCad ---
+# Mantemos os arquivos de projeto (.kicad_pro, .kicad_pcb, .kicad_sch)
+# Ignoramos backups e arquivos temporários
+*-backups/
+*.bak
+*.kicad_pcb-bak
+*.sch-bak
+*_autosave-*
+*.lck
+fp-info-cache
+python-float-config
+
+# --- Proteus (ISIS / ARES) ---
+*.pwi
+*.bak
+*.log
+*.txt
+*.last
+*.DBK
+
+# --- Geral (EDA / Compiladores C para Microcontroladores) ---
+*.o
+*.hex
+*.obj
+*.lst
+*.map
+*.txt
